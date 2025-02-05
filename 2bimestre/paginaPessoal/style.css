@@ -1,22 +1,38 @@
-/* Definindo as cores principais */
+
 :root {
     --cor-principal: #1E3A8A; /* Azul */
-    --cor-secundaria: #F1F5F9; /* Cinza claro */
-    --cor-destaque: #F59E0B; /* Laranja */
+    --cor-secundaria: #5393d6; /* Cinza claro */
+    --cor-destaque: #f8ae2f; /* Laranja */
 }
 
-/* Resetando margens e paddings */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
 body {
     font-family: Arial, sans-serif;
     background-color: var(--cor-secundaria);
     color: #333;
+    height: 100vh; 
+    display: block;
+    text-align: center;
 }
+
+
+main {
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 20px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); 
+}
+
 
 header {
     background-color: var(--cor-principal);
@@ -29,6 +45,7 @@ header h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
 }
+
 
 nav ul {
     list-style-type: none;
@@ -45,6 +62,7 @@ nav ul li a {
     font-size: 1rem;
 }
 
+
 #hero {
     text-align: center;
     padding: 40px 0;
@@ -56,10 +74,12 @@ nav ul li a {
     font-size: 2.5rem;
 }
 
+
 #curiosidades {
     text-align: center;
     padding: 40px 0;
 }
+
 
 .cards {
     display: block;
@@ -88,6 +108,7 @@ nav ul li a {
     transform: scale(1.05);
 }
 
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -104,6 +125,7 @@ th {
     background-color: var(--cor-principal);
     color: #fff;
 }
+
 
 footer {
     background-color: var(--cor-principal);
